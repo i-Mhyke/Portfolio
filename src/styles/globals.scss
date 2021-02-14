@@ -1,0 +1,47 @@
+@import "./variables";
+
+$universalFont: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $universalFont;
+  background-color: $darkBackgroundPrimary;
+  color: $darkBackgroundText;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.dark-mode {
+  background-color: $darkBackgroundPrimary;
+  color: $darkBackgroundText;
+
+  nav {
+    background-color: $darkBackgroundSecondary;
+  }
+}
+.light-mode {
+  background-color: $lightBackgroundPrimary;
+  color: $lightBackgroundText;
+
+  nav {
+    background: $lightBackgroundSecondary;
+  }
+}
