@@ -32,7 +32,9 @@ const Nav = styled.nav`
     height: auto;
     width: 100%;
     padding: 1rem 0rem;
-    position: relative;
+    position: fixed;
+    top: 0;
+    background: transparent;
     ul {
       display: flex;
       gap: 1rem;

@@ -11,7 +11,7 @@ export default function Home() {
             <h3 className="font-extrabold text-3xl">
               Hello, 👋 I am Michael Madumere
             </h3>
-            <h1>Web Developer</h1>
+            <h1 className="font-bold text-xl">Web Developer</h1>
           </div>
           <div>
             <img
@@ -42,15 +42,6 @@ export default function Home() {
           </div>
         </Section>
       </Page>
-      <style jsx>
-        {`
-          .slide {
-            scroll-snap-align: start;
-            scroll-snap-stop: normal;
-            scroll-margin: 10rem;
-          }
-        `}
-      </style>
     </>
   );
 }
