@@ -25,7 +25,9 @@ const Nav = styled.nav`
   width: 8.33%;
   height: 100vh;
   padding: 2.5rem 0rem;
-  @media (max-width: ${theme.size.mobileL}) {
+  background: #232323;
+  z-index: 50;
+  @media (max-width: ${theme.size.laptop}) {
     flex-direction: row;
     height: auto;
     width: 100%;
@@ -33,6 +35,7 @@ const Nav = styled.nav`
     position: relative;
     ul {
       display: flex;
+      gap: 1rem;
     }
   }
 `;

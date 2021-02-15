@@ -1,12 +1,20 @@
 import React from "react";
 import styled from "styled-components";
 
-const Base = styled.div`
-  margin-left: 8.333%;
+const Page = styled.div.attrs((props) => ({
+  className: "",
+}))`
+  height: 100vh;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
 `;
 
-const Page = ({ children }) => {
-  return <Base>{children}</Base>;
-};
+export const Section = styled.div.attrs((props) => ({
+  className: "",
+}))`
+  padding-left: 9%;
+  scroll-snap-align: center;
+  height: 100vh;
+`;
 
 export default Page;
